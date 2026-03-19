@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Awards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page" data-page="awards">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-button back-btn" onclick="goBack()">Back</button>
+      <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+      <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+      <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+      <button class="nav-button" data-page="gallery.html" onclick="navigate('gallery.html')">Gallery</button>
+      <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+      <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2>Awards & Achievements</h2>
+      <p>Vijay's journey is decorated with awards, chart-topping blockbusters and memorable moments that resonated with millions.</p>
+
+      <div class="award-grid">
+        <div class="award-card">
+          <div class="award-icon">🏆</div>
+          <div class="award-info">
+            <h3>Tamil Nadu State Film Award</h3>
+            <p>Recognized for outstanding performances across multiple decades.</p>
+            <div class="counter" data-target="5">0</div>
+            <p style="opacity:.7; font-size:.9rem;">Awards won</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon">🎬</div>
+          <div class="award-info">
+            <h3>Blockbuster Films</h3>
+            <p>Films that crossed major box office milestones.</p>
+            <div class="counter" data-target="35">0</div>
+            <p style="opacity:.7; font-size:.9rem;">Blockbusters</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon">🌟</div>
+          <div class="award-info">
+            <h3>Years Active</h3>
+            <p>A sustained ride of success and evolution.</p>
+            <div class="counter" data-target="32">0</div>
+            <p style="opacity:.7; font-size:.9rem;">Years</p>
+          </div>
+        </div>
+
+        <div class="award-card">
+          <div class="award-icon">🔥</div>
+          <div class="award-info">
+            <h3>Fan Clubs</h3>
+            <p>Dedicated fan clubs across the globe.</p>
+            <div class="counter" data-target="180">0</div>
+            <p style="opacity:.7; font-size:.9rem;">Countries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Watch the counters glow as you scroll.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Vijay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page" data-page="contact">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-button back-btn" onclick="goBack()">Back</button>
+      <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+      <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+      <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+      <button class="nav-button" data-page="gallery.html" onclick="navigate('gallery.html')">Gallery</button>
+      
+      <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+      <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Send a message to the team. We’ll get back to you soon.</p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+
+        <div class="social-links" style="margin-top: 1.5rem;">
+          <a class="social-link" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.26 4.26 0 001.88-2.35 8.5 8.5 0 01-2.7 1.03 4.25 4.25 0 00-7.24 3.9A12.1 12.1 0 013 4.87a4.25 4.25 0 001.32 5.68 4.24 4.24 0 01-1.92-.53v.05a4.25 4.25 0 003.4 4.17 4.3 4.3 0 01-1.92.07 4.25 4.25 0 003.97 2.95A8.53 8.53 0 012 19.54a12.04 12.04 0 006.5 1.9c7.8 0 12.07-6.46 12.07-12.07 0-.18 0-.37-.01-.55A8.64 8.64 0 0024 4.56a8.43 8.43 0 01-2.54.7z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"/><path d="M12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.5a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5zM17.75 6a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.52 9.87v-6.99h-2.1V12h2.1V9.83c0-2.07 1.23-3.22 3.12-3.22.9 0 1.84.16 1.84.16v2.02h-1.04c-1.03 0-1.35.64-1.35 1.3V12h2.3l-.37 2.88h-1.93v6.99A10 10 0 0022 12z"/></svg>
+          </a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Ready to connect? Send your message and we’ll follow up.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

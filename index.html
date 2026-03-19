@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actor Vijay Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page" data-page="index">
+  <main class="hero">
+    <div class="hero-overlay"></div>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <button class="nav-button back-btn" onclick="goBack()">Back</button>
+        <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+        <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+        <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+        <button class="nav-button" data-page="gallery.html" onclick="navigate('gallery.html')">Gallery</button>
+        <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+        <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Actor Vijay Portfolio</h1>
+      <p class="hero-tagline">Tamil Cinema Superstar</p>
+      <div class="hero-buttons">
+        <button class="glow-btn" onclick="navigate('about.html')">About Vijay</button>
+        <button class="glow-btn" onclick="navigate('movies.html')">Explore Filmography</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Experience Vijay's cinematic energy — smooth, bold, and unforgettable.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page" data-page="gallery">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-button back-btn" onclick="goBack()">Back</button>
+      <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+      <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+      <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+      <button class="nav-button" data-page="gallery.html" onclick="navigate('gallery.html')">Gallery</button>
+      <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+      <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <p>Tap or click any image to view it larger.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-image="https://wallpaperaccess.com/full/7287089.jpg" data-alt="Vijay Photo 1">
+          <img src="https://wallpaperaccess.com/full/7287089.jpg" alt="Vijay Photo 1" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://tse1.explicit.bing.net/th/id/OIP.OvQbBkLMHQXcnLZEasnVgAHaJK?rs=1&pid=ImgDetMain&o=7&rm=3"
+          data-alt="Vijay Photo 2">
+          <img src="https://tse1.explicit.bing.net/th/id/OIP.OvQbBkLMHQXcnLZEasnVgAHaJK?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Vijay Photo 2" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://www.wallsnapy.com/img_gallery/sarkar-latest-vijay-hd-images-1614829.png"
+          data-alt="Vijay Photo 3">
+          <img src="https://www.wallsnapy.com/img_gallery/sarkar-latest-vijay-hd-images-1614829.png"
+            alt="Vijay Photo 3" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://tse3.mm.bing.net/th/id/OIP.5GJ2cze6v6wTVswzizE-1gAAAA?w=420&h=640&rs=1&pid=ImgDetMain&o=7&rm=3"
+          data-alt="Vijay Photo 4">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.5GJ2cze6v6wTVswzizE-1gAAAA?w=420&h=640&rs=1&pid=ImgDetMain&o=7&rm=3"
+            data-alt="Vijay Photo 4" />
+        </div>
+        <div class="gallery-item" data-image="https://wallpaperaccess.com/full/1995956.jpg" data-alt="Vijay Photo 5">
+          <img src="https://wallpaperaccess.com/full/1995956.jpg" alt="Vijay Photo 5" />
+        </div>
+        <div class="gallery-item" data-image="https://wallpapercave.com/wp/wp9614966.jpg" data-alt="Vijay Photo 6">
+          <img src="https://wallpapercave.com/wp/wp9614966.jpg" alt="Vijay Photo 6" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://i.pinimg.com/236x/36/80/b1/3680b1ea39cbe4ec8c88f23e4e5ae2fd.jpg?nii=t"
+          data-alt="Vijay Photo 7">
+          <img src="https://i.pinimg.com/236x/36/80/b1/3680b1ea39cbe4ec8c88f23e4e5ae2fd.jpg?nii=t"
+            alt="Vijay Photo 7" />
+        </div>
+        <div class="gallery-item" data-image="https://wallpaperaccess.com/full/1513246.jpg" data-alt="Vijay Photo 8">
+          <img src="https://wallpaperaccess.com/full/1513246.jpg" alt="Vijay Photo 8" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://www.pinkvilla.com/images/2023-08/1160831014_vijay-beast-1280-1.jpg"
+          data-alt="Vijay Photo 9">
+          <img src="https://www.pinkvilla.com/images/2023-08/1160831014_vijay-beast-1280-1.jpg" alt="Vijay Photo 9" />
+        </div>
+        <div class="gallery-item"
+          data-image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+          data-alt="Vijay Photo 10">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=60"
+            alt="Vijay Photo 10" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <img id="modal-image" alt="" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Tap outside the photo or hit close to return.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

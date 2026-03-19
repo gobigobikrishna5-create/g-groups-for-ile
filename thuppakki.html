@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thuppakki - Vijay Film</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page" data-page="movies">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-button back-btn" onclick="goBack()">Back</button>
+      <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+      <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+      <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+
+      <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+      <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2>Thuppakki (2012)</h2>
+      <p>A taut action thriller where Vijay plays an army officer hunting terrorists in Mumbai.</p>
+
+      <div class="card-grid">
+        <div class="movie-card">
+          <img src="https://wallpapercave.com/wp/wp6564229.jpg" alt="Thuppakki poster" />
+          <div class="movie-info">
+            <h3>Plot</h3>
+            <p>After returning from duty, a soldier uncovers a terrorist plot and uses his training to track down the
+              threats and protect the city.</p>
+            <h3>Impact</h3>
+            <p>The film became a massive hit and is remembered for its smart screenplay, punchy dialogue, and action set
+              pieces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Tap the back nav button to return to the film list.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

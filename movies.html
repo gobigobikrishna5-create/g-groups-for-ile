@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Filmography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page" data-page="movies">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-button back-btn" onclick="goBack()">Back</button>
+      <button class="nav-button" data-page="index.html" onclick="navigate('index.html')">Home</button>
+      <button class="nav-button" data-page="about.html" onclick="navigate('about.html')">About Vijay</button>
+      <button class="nav-button" data-page="movies.html" onclick="navigate('movies.html')">Filmography</button>
+      <button class="nav-button" data-page="gallery.html" onclick="navigate('gallery.html')">Gallery</button>
+
+      <button class="nav-button" data-page="awards.html" onclick="navigate('awards.html')">Awards</button>
+      <button class="nav-button" data-page="contact.html" onclick="navigate('contact.html')">Contact</button>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2>Filmography</h2>
+      <p>Explore key blockbusters that defined Vijay’s legendary career.</p>
+
+      <div class="card-grid">
+        <button type="button" class="movie-card" onclick="navigate('ghilli.html')" aria-label="View Ghilli details">
+          <img src="https://cdn.icowboysradio.com/cuckooradio/uploads/2021/01/Gilli-min.jpg" alt="Ghilli poster" />
+          <div class="movie-info">
+            <h3>Ghilli</h3>
+          </div>
+        </button>
+
+        <button type="button" class="movie-card" onclick="navigate('thuppakki.html')"
+          aria-label="View Thuppakki details">
+          <img src="https://wallpapercave.com/wp/wp6564229.jpg" alt="Thuppakki poster" />
+          <div class="movie-info">
+            <h3>Thuppakki</h3>
+          </div>
+        </button>
+
+        <button type="button" class="movie-card" onclick="navigate('mersal.html')" aria-label="View Mersal details">
+          <img
+            src="https://www.filmibeat.com/fanimg/movie/15446/vijay-61-vijay-atlee-combo-mersal-photos-images-57538.jpg"
+            alt="Mersal poster" />
+          <div class="movie-info">
+            <h3>Mersal</h3>
+          </div>
+        </button>
+
+        <button type="button" class="movie-card" onclick="navigate('master.html')" aria-label="View Master details">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.Ni-quDUUIPPRt-Z_caXBXwHaHa?w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Master poster" />
+          <div class="movie-info">
+            <h3>Master</h3>
+          </div>
+        </button>
+
+        <button type="button" class="movie-card" onclick="navigate('leo.html')" aria-label="View Leo details">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.Ym3w2BVU9jTibJO-FwhqmQHaEO?w=700&h=400&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Leo poster" />
+          <div class="movie-info">
+            <h3>Leo</h3>
+          </div>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Hover any card to zoom into the cinematic energy.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
